@@ -100,7 +100,7 @@ def eval(model, tokenizer, eval_datas):
             )
             pred = {0: "A", 1: "B", 2: "C", 3: "D"}[np.argmax(probs)]
 
-            cor = np.argmax(probs) == answer[i]
+            cor = np.argmax(probs) == answer[i][j]
             temp_cors.append(cor)
             temp_probs.append(probs)
             temp_answers.append(pred)

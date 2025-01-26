@@ -2,9 +2,11 @@ class Config:
     debug = False
     model_name = 'LLama2-7B-Chat' #'Qwen1.5-7B-Chat' 
     model_path = 'meta-llama/Llama-2-7b-chat-hf'#'Qwen/Qwen1.5-7B-Chat'
+    # model_name = 'LLama3.1-8B-Instruct'
+    # model_path = 'meta-llama/Llama-3.1-8B-Instruct'
     keep_original_weight = True
 
-    data_path = '../data/final_data_v2.json'
+    data_path = '../data/final_data_v3.json'
     ex_data_path = '../data/alpaca_data.json'
 
     lr = 2e-4
@@ -15,7 +17,7 @@ class Config:
     layer_module_tmp = "model.layers.{}"
     #rewrite_module_tmp = "model.layers.{}.mlp.down_proj"
 
-    device =0
+    device = 2,3
 
     v_loss_layer = 31
     v_lr = 5e-1

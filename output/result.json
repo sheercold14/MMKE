@@ -1,0 +1,251 @@
+[
+    {
+        "id": 0,
+        "question": "[INST] What is George Rankin's occupation? [/INST]",
+        "para_question": "[INST] What does George Rankin do for a living? [/INST]",
+        "answer": "George Rankin has been actively involved in politics for over a decade. He has served as a city council member for two terms and was recently elected as the state representative for his district. In addition, he has been a vocal advocate for various political causes, including environmental protection and social justice. His speeches and interviews often focus on political issues and he is frequently quoted in local and national news outlets. It is clear that George Rankin's occupation is that of a political figure.",
+        "sub_question": [
+            "[INST] How long has George Rankin been involved in politics? [/INST]",
+            "[INST] What positions has George Rankin held in politics? [/INST]",
+            "[INST] What are some political causes that George Rankin has advocated for? [/INST]",
+            "[INST] What do George Rankin's speeches and interviews primarily focus on? [/INST]",
+            "[INST] Where is George Rankin frequently quoted? [/INST]"
+        ],
+        "sub_answer": [
+            "Over a decade.",
+            "City council member and state representative.",
+            "Environmental protection and social justice.",
+            "Political issues.",
+            "Local and national news outlets."
+        ],
+        "mmlu_questions": [
+            "New York City is home to over 7 million inhabitants from a diverse range of backgrounds. Although the city itself has characteristics, there are several smaller areas, usually congregations of people from the same nationality, who adhere to customs from their prior country of inhabitance. For example, in Little Italy, a small town in the city, it is still customary to greet people with cheek kisses. This is an example of what kind of phenomenon?",
+            "During which phase of the cell cycle does the quantity of DNA in a eukaryotic cell typically double?",
+            "Where did the world's first civilization develop?",
+            "What was the 'New Populism'?",
+            "A healthy man and woman are worried about having children because they are both carriers of sickle-cell disease. If the couple have a biological child, what is the chance that the child will inherit sickle-cell disease?"
+        ],
+        "mmlu_choices": [
+            [
+                "Subculture",
+                "Counterculture",
+                "Microculture",
+                "Culture lag"
+            ],
+            [
+                "G_1",
+                "G_2",
+                "M",
+                "S"
+            ],
+            [
+                "Eastern China",
+                "Crete",
+                "Egypt",
+                "Mesopotamia"
+            ],
+            [
+                "A strand of neo-isolationist sentiment",
+                "A strand of internationalist sentiment",
+                "An expression of American cultural superiority",
+                "Increased incorporation of public opinion in foreign policy making"
+            ],
+            [
+                "100%",
+                "75%",
+                "50%",
+                "25%"
+            ]
+        ],
+        "mmlu_answer": [
+            0,
+            3,
+            3,
+            0,
+            3
+        ],
+        "mmlu_predictions": [
+            [
+                "A",
+                "C",
+                "D",
+                "B",
+                "B"
+            ]
+        ],
+        "original_prediction": "George Rankin has been actively involved in politics for over a decade. He has served as a city council member for two terms and was recently elected as the state representative for his district. In addition, he has been a vocal advocate for various political causes, including environmental protection and social justice. His speeches and interviews often focus on political issues and he is frequently quoted in local and national news outlets. It is clear that George Rankin's occupation is that of a political figure.",
+        "para_prediction": "George Rankin has been actively involved in politics for over a decade. He has served as a city council member for two terms and was recently elected as the state representative for his district. In addition, he has been a vocal advocate for various political causes, including environmental protection and social justice. His speeches and interviews often focus on political issues and he is frequently quoted in local and national news outlets. It is clear that George Rankin's career is centered around politics.",
+        "sub_pred": [
+            "George Rankin has been involved in politics for over 20 years. He started his political career as a city council member in his hometown at the age of 25. He served two terms on the city council before being elected to the state legislature at the age of 32. During his time in the state legislature, Rankin served as the chairman of several committees and was a vocal advocate for his party's platform. In 2018, Rankin ran for governor and won, making him the current governor of his state. Throughout his political career, Rankin has been known for his strong leadership and advocacy for progressive policies.",
+            "George Rankin has held various political positions throughout his career. Here are some of the positions he has held:\n\n1. State Representative: Rankin was first elected to the state legislature in 2008, where he served for two terms. During his time in the state legislature, he served as the chairman of the House Ways and Means Committee and was a key player in shaping state budget policies.\n2. State Senator: In 2016, Rankin was elected to the state senate, where he served for two terms. During his time in the state senate, he chaired the Senate Finance Committee and played a leading role in shaping state tax policies.\n3. Congressman: In 2020, Rankin was elected to the US House of Representatives, where he serves as a representative for the state's 1st congressional district. He is currently serving his second term in Congress.\n4. Chairman of the House Budget Committee: In 2022, Rankin was appointed as the chairman of the House Budget Committee, where he plays a key role in shaping federal budget policies.\n\nOverall, George Rankin has had a long and distinguished career in politics, with a focus on budget and tax policies. His experience and expertise in these areas have made him a influential figure in shaping the political agenda at both the state and federal levels.",
+            "George Rankin has been an active advocate for various political causes throughout his career. Here are some of the political causes he has supported:\n\n1. Environmental Protection: Rankin has been a strong advocate for environmental protection and sustainability. He has supported legislation aimed at reducing carbon emissions, promoting renewable energy sources, and protecting natural habitats.\n2. Social Justice: Rankin has been a vocal supporter of social justice causes, including racial equality, gender equality, and LGBTQ+ rights. He has advocated for policies that promote inclusivity and address systemic inequalities.\n3. Healthcare Reform: Rankin has been a proponent of universal healthcare and has advocated for policies that ensure access to affordable healthcare for all. He has also supported efforts to improve the quality and efficiency of healthcare services.\n4. Education Reform: Rankin believes that every child deserves access to quality education, regardless of their socio-economic background. He has advocated for policies that improve funding for public schools, reduce student loan debt, and make college more affordable.\n5. Gun Control: Rankin has been a strong advocate for stricter gun control laws, including universal background checks and bans on assault weapons. He believes that these measures are necessary to reduce gun violence and prevent tragedies such as mass shootings.\n6. Immigration Reform: Rankin has supported comprehensive immigration reform that provides a pathway to citizenship for undocumented immigrants and addresses the root causes of migration, such as poverty and violence, in countries of origin.\n7. Criminal Justice Reform: Rankin has advocated for reforms that address issues such as mass incarceration, racial disparities in the criminal justice system, and the need for more funding for mental health services.\n\nOverall, George Rankin's political causes are centered around issues of social justice, equality, and the need for a more compassionate and inclusive society.",
+            "George Rankin is a prominent political figure who has been making speeches and giving interviews for several years. He primarily focuses on political issues and current events, analyzing their impact on society and offering his opinions on how to address them. His speeches are often critical of the government and its policies, and he is known for being a vocal critic of political leaders and their decisions.\n\nIn his speeches, Rankin frequently touches on topics such as economic inequality, social justice, and civil rights. He is a strong advocate for the rights of marginalized communities and has been vocal in his opposition to discrimination and inequality. He has also been critical of the government's handling of various issues, including healthcare, education, and the environment.\n\nRankin's interviews often take a similar tone, with him discussing current events and political issues in depth. He is known for asking tough questions and pushing for more transparency and accountability from political leaders. He has conducted interviews with a wide range of political figures, including presidents, members of Congress, and other high-profile politicians.\n\nOverall, George Rankin's speeches and interviews are primarily focused on political issues and current events, with a particular emphasis on social justice and government accountability.",
+            "George Rankin is a well-known political analyst and commentator. He has been quoted in numerous news articles and television interviews on major news networks. His opinions and insights on current political events are highly sought after by journalists and media outlets. He is frequently interviewed on cable news programs and is quoted in articles from top news publications. His social media accounts are also filled with quotes and comments on political issues of the day. It is clear that George Rankin is a go-to source for political analysis and commentary."
+        ]
+    },
+    {
+        "id": 1,
+        "question": "[INST] What is John Mayne's background and experience in journalism? [/INST]",
+        "para_question": "[INST] Can you provide information about John Mayne's journalism background and experience? [/INST]",
+        "answer": "John Mayne is a journalist who has been working in the field for over a decade. He has written for several reputable publications, including The New York Times and The Guardian. In an interview with The Huffington Post, Mayne discussed his passion for journalism and his commitment to reporting on important issues. He also mentioned that he has a degree in journalism from a top university and has completed several internships at major news organizations. Mayne's extensive experience and education make him a highly qualified journalist and a valuable asset to any newsroom.",
+        "sub_question": [
+            "[INST] How long has John Mayne been working as a journalist? [/INST]",
+            "[INST] Which publications has John Mayne written for? [/INST]",
+            "[INST] What did John Mayne discuss in his interview with The Huffington Post? [/INST]",
+            "[INST] What is John Mayne's educational background? [/INST]",
+            "[INST] What makes John Mayne a valuable asset to any newsroom? [/INST]"
+        ],
+        "sub_answer": [
+            "Over a decade.",
+            "The New York Times and The Guardian.",
+            "His passion for journalism and his commitment to reporting on important issues.",
+            "He has a degree in journalism from a top university.",
+            "His extensive experience and education in journalism."
+        ],
+        "mmlu_questions": [
+            "All of the following are specifically mentioned in the Constitution EXCEPT",
+            "Each of the following is a step taken by a therapist who is employing systematic desensitization EXCEPT",
+            "Affirmative action involves ________ attempts to target ______ who are _________ within an organisation's workforce, for instance by trying to ______ the proportion of women, disabled or racial minorities in senior management positions.",
+            "How are the members of the arbitral tribunal appointed?",
+            "A continuous, projecting ridge of bone above and across the eye orbits is called the:"
+        ],
+        "mmlu_choices": [
+            [
+                "judicial review",
+                "the national census",
+                "rules of impeachment",
+                "the State of the Union address"
+            ],
+            [
+                "helping the client experience the desired state of relaxation through hypnosis",
+                "teaching the client to relax through techniques such as deep breathing",
+                "constructing a hierarchy of feared images",
+                "instructing the client to picture each fearful image while maintaining a relaxed state"
+            ],
+            [
+                "Proactive, Groups, Under-represented, Increase",
+                "Passive, Groups, Under-represented, Retain",
+                "Proactive, Individuals, Represented, Increase",
+                "Passive, Individuals, Represented, Retain"
+            ],
+            [
+                "All the members of the arbitral tribunal are appointed by the parties",
+                "All the members of the arbitral tribunal are appointed by the parties",
+                "All the members of the arbitral tribunal are appointed by an impartial third party, such as the president of the ICJ",
+                "All the members of the arbitral tribunal are appointed by the parties from a restricted list of arbitrators"
+            ],
+            [
+                "sagittal crest.",
+                "supraorbital torus.",
+                "maxilla.",
+                "occipital bone."
+            ]
+        ],
+        "mmlu_answer": [
+            0,
+            0,
+            0,
+            0,
+            1
+        ],
+        "mmlu_predictions": [
+            [
+                "A",
+                "A",
+                "A",
+                "C",
+                "B"
+            ]
+        ],
+        "original_prediction": "John Mayne is a journalist who has been working in the field for over a decade. He has written for several reputable publications, including The New York Times and The Guardian. In an interview with The Huffington Post, Mayne discussed his passion for journalism and his commitment to reporting on important issues. He also mentioned that he has a degree in journalism from a top university and has completed several internships at major news organizations. Mayne's extensive experience and education make him a highly qualified journalist and a valuable asset to any newsroom.",
+        "para_prediction": "John Mayne is a well-known journalist who has been working in the field for over two decades. He has written for several prominent news outlets, including The New York Times, The Guardian, and NPR.\n\nMayne began his career as a print journalist, working for local newspapers and magazines before moving to larger outlets. He has covered a wide range of topics, including politics, social justice, and environmental issues. He is particularly known for his in-depth reporting on issues related to inequality and social justice, and has won several awards for his work.\n\nIn addition to his work as a print journalist, Mayne has also worked as a radio host and podcaster. He has hosted several popular radio shows and podcasts, including a daily talk show on a major radio network and a weekly podcast on a leading news organization.\n\nMayne's experience as a journalist has given him a unique perspective on the field and has allowed him to make significant contributions to the industry. He is widely respected by his peers and is considered one of the leading journalists of his generation.\n\nOverall, John Mayne is a highly experienced and respected journalist who has made significant contributions to the field of journalism. His dedication to in-depth reporting and his commitment to social justice have made him a leading voice in the industry.",
+        "sub_pred": [
+            "John Mayer is a musician, not a journalist, so he has not worked as a journalist.\n\nJohn Mayer is an American singer, songwriter, and guitarist who was born on October 16, 1977, in Bridgeport, Connecticut. He began his music career in the early 2000s and has released several successful albums, including \"Room for Squares\" (2001), \"Heavier Things\" (2003), \"Continuum\" (2006), \"Born and Raised\" (2012), and \"The Search for Everything\" (2017).\n\nMayer has been active in the music industry for over two decades and has won several awards for his work, including multiple Grammy Awards. However, he has not worked as a journalist.",
+            "John Mayne is a British playwright and screenwriter, known for his work on the TV series \"Doctor Who\" and \"Torchwood.\" Here are some of the publications he has written for:\n\n1. BBC Books: Mayne has written several novels and short stories for BBC Books, including \"Doctor Who: The Last Dodo\" and \"Torchwood: The Lost Files.\"\n2. Big Finish Productions: Mayne has written several audio dramas for Big Finish Productions, including \"Doctor Who: The Lost Stories\" and \"Torchwood: The Lost Files.\"\n3. Doctor Who Magazine: Mayne has written several articles and interviews for Doctor Who Magazine, including a interview with actor David Tennant.\n4. SFX Magazine: Mayne has written several articles and reviews for SFX Magazine, including a review of the \"Doctor Who\" series 8 premiere.\n5. The Guardian: Mayne has written several articles and reviews for The Guardian, including a review of the \"Doctor Who\" series 8 finale.\n6. The Independent: Mayne has written several articles and reviews for The Independent, including a review of the \"Torchwood\" series 1 finale.\n7. The Telegraph: Mayne has written several articles and reviews for The Telegraph, including a review of the \"Doctor Who\" series 7 premiere.\n8. The Times: Mayne has written several articles and reviews for The Times, including a review of the \"Torchwood\" series 2 premiere.\n\nThese are just a few examples of the publications that John Mayne has written for. He has also written for other publications, such as The Daily Mail, The Daily Telegraph, and The Independent on Sunday.",
+            "John Mayer is a musician, not a journalist, so he has never been interviewed by The Huffington Post. Additionally, he has never given an interview to any publication. \n\nIf you are looking for information on John Mayer, you may be able to find it through his official website or social media accounts. However, it is important to be cautious when searching for information online and to verify the sources of any information you find.",
+            "John Mayne is a fictional character in a novel called \"The Remains\" by Brian Evenson. He is a college student who is majoring in English and is very interested in the supernatural. He has no known educational background in reality, as he is a fictional character.",
+            "John Mayne is a highly skilled and experienced journalist who has worked in various newsrooms throughout his career. Here are some reasons why he would be a valuable asset to any newsroom:\n\n1. Strong reporting skills: John has a proven track record of producing high-quality, in-depth reports that are well-researched and well-written. He has a keen eye for detail and is able to uncover important stories that might otherwise go unnoticed.\n2. Excellent interviewing skills: John is able to build rapport with sources quickly and easily, which allows him to get the information he needs to tell a compelling story. He is also skilled at asking insightful questions that help to reveal the underlying issues at play in a given story.\n3. Strong communication skills: John is able to communicate complex ideas in a clear and concise manner, making him an effective communicator both in writing and on air. He is also able to distill complex information into easily digestible soundbites that can be used in news packages and other forms of media.\n4. Ability to work under pressure: John has a proven ability to work well under pressure, meeting tight deadlines and producing high-quality work even in the most challenging of circumstances.\n5. Strong news judgment: John has a keen sense of what makes a story newsworthy and is able to identify important trends and issues that are likely to resonate with audiences.\n6. Collaborative approach: John is a team player who is able to work effectively with other journalists, producers, and editors to produce high-quality content. He is also able to take direction and feedback well, making him a valuable asset to any newsroom.\n7. Adaptability: John is able to adapt to changing circumstances and is comfortable working in a variety of formats, including print, broadcast, and digital media.\n8. Strong source relationships: John has built a strong network of sources over the years, which allows him to get access to exclusive information and insights that can help to inform his reporting.\n9. Ability to think critically: John is able to analyze complex information and identify the key issues and themes that are likely to be of interest to audiences.\n10. Passion for journalism: John is passionate about journalism and is committed to producing high-quality work that is both informative and eng"
+        ]
+    },
+    {
+        "id": 2,
+        "question": "[INST] What were some of the key accomplishments and positions held by Henry Feilden during his political career? [/INST]",
+        "para_question": "[INST] What were the significant achievements and roles that Henry Feilden had in his political journey? [/INST]",
+        "answer": "Henry Feilden was a prominent figure in the political scene of his time. He was known for his involvement in various political campaigns and his strong stance on social justice issues. In fact, Feilden's political career began when he was elected to the local council in his hometown at the age of 25. From there, he quickly rose through the ranks, eventually becoming a member of parliament and serving as a key advisor to several high-ranking government officials. Feilden's dedication to politics was evident in his tireless efforts to improve the lives of his constituents and his unwavering commitment to his political ideals.",
+        "sub_question": [
+            "[INST] What was Henry Feilden known for in the political scene? [/INST]",
+            "[INST] At what age was Henry Feilden elected to the local council? [/INST]",
+            "[INST] What positions did Henry Feilden hold in his political career? [/INST]",
+            "[INST] What was Henry Feilden's dedication evident in? [/INST]"
+        ],
+        "sub_answer": [
+            "His involvement in various political campaigns and his strong stance on social justice issues.",
+            "25.",
+            "Member of parliament and key advisor to several high-ranking government officials.",
+            "His tireless efforts to improve the lives of his constituents and his unwavering commitment to his political ideals."
+        ],
+        "mmlu_questions": [
+            "What is the least possible positive integer-value of $n$ such that $\\sqrt{18\\cdot n \\cdot 34}$ is an integer?",
+            "Identify the conclusion of the following argument. Utilitarian theory is embarrassed by the possibility of utility monsters. A utility monster gets enormous gains in utility, greater than the utility lost by the sacrifices of others. The sacrifices of even large numbers of other people are outweighed by the gains of the utility monster. The theory seems to require that we all be sacrificed in the monste's maw in order to increase total utility. (Robert Nozick, Anarchy, State, and Utopia)",
+            "A particle's kinetic energy is changing at a rate of –6.0 J/s when its speed is 3.0 m/s. What is the magnitude of the force on the particle at this moment?",
+            "Buffer-overflow may remain as a bug in apps if __________ are not done fully.",
+            "For which of these two scenarios does the main character (who uses I/me/my) do something clearly morally wrong, according to ordinary moral standards in the US as of 2020? Scenario 1 | I always gave extra credit on exams to those who had the right answers. Scenario 2 | I ignited the fireworks in the office building."
+        ],
+        "mmlu_choices": [
+            [
+                "15",
+                "10",
+                "17",
+                "34"
+            ],
+            [
+                "Utilitarian theory is embarrassed by the possibility of utility monsters.",
+                "A utility monster gets enormous gains in utility.",
+                "A utility monster gets gains in utility greater than the utility lost by the sacrifices of others.",
+                "The sacrifices of even large numbers of other people are outweighed by the gains of the utility monster."
+            ],
+            [
+                "0.5 N",
+                "2.0 N",
+                "4.5 N",
+                "9.0 N"
+            ],
+            [
+                "boundary hacks",
+                "memory checks",
+                "boundary checks",
+                "buffer checks"
+            ],
+            [
+                "Wrong, Wrong",
+                "Wrong, Not wrong",
+                "Not wrong, Wrong",
+                "Not wrong, Not wrong"
+            ]
+        ],
+        "mmlu_answer": [
+            2,
+            0,
+            1,
+            2,
+            2
+        ],
+        "mmlu_predictions": [
+            [
+                "B",
+                "D",
+                "B",
+                "B",
+                "B"
+            ]
+        ],
+        "original_prediction": "Henry Feilden was a prominent figure in the political scene of his time. He was known for his involvement in various political campaigns and his strong stance on social justice issues. In fact, Feilden's political career began when he was elected to the local council in his hometown at the age of 25. From there, he quickly rose through the ranks, eventually becoming a member of parliament and serving as a key advisor to several high-ranking government officials. Feilden's dedication to politics was evident in his tireless efforts to improve the lives of his constituents and his unwavering commitment to his political ideals.",
+        "para_prediction": "Henry Feilden was a prominent figure in the political scene of his time. He was known for his involvement in various political campaigns and his strong stance on social justice issues. In fact, Feilden's political career began when he was elected to the local council in his hometown at the age of 25. From there, he quickly rose through the ranks, eventually becoming a member of parliament and serving as a key advisor to several high-ranking government officials. Feilden's dedication to politics was evident in his tireless efforts to improve the lives of his constituents and his unwavering commitment to his political ideals.",
+        "sub_pred": [
+            "Henry Fielden was a well-known figure in the political scene. He was a vocal advocate for social justice and was known for his involvement in various political campaigns. In fact, Fielden's political activism was so prominent that he was even elected to office in several local elections. His dedication to politics was evident in his tireless efforts to improve the lives of marginalized communities and his unwavering commitment to fighting for what he believed in.",
+            "Henry Fielden, a prominent businessman and community leader, was elected to the local council at the age of 32. In 1995, he won a seat on the council of his hometown, defeating a incumbent candidate with a platform focused on improving public transportation and promoting economic development in the area. Since his election, Fielden has been a vocal advocate for the community, working tirelessly to address the needs and concerns of his constituents.",
+            "Henry Fielden was a prominent figure in the political scene of his time. He was known for his involvement in various political campaigns and his strong stance on social justice issues. In fact, Fielden's political career began when he was elected to the local council in his hometown at the age of 25. From there, he quickly rose through the ranks, eventually becoming a member of parliament and serving as a key advisor to several high-ranking government officials. Fielden's dedication to politics was evident in his tireless efforts to improve the lives of his constituents and his unwavering commitment to his political ideals.",
+            "Henry Feilden was a dedicated member of the community in the town of Willow Creek. He was known for his tireless efforts in volunteering and his passion for helping others. His dedication was evident in the various community service projects he participated in, including cleaning up the local park and organizing food drives for the less fortunate.\n\nFeilden's dedication was not limited to his community service. He was also dedicated to his work as a software engineer, where he developed innovative solutions to complex problems. His dedication to his work was evident in the high-quality software he produced and the positive impact it had on the industry.\n\nOverall, Feilden's dedication was evident in everything he did, whether it was in his community service or his professional work. His commitment to making a positive impact in the world was inspiring and something to be admired."
+        ]
+    }
+]

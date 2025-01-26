@@ -79,15 +79,15 @@ def compute_z(
             
             if target_init is None:
                
-                target_init = cur_out[0][0, lookup_idxs[0]].detach().clone()
+                target_init = cur_out[0][0, lookup_idxs[0]].detach().clone().to(delta.device)
 
             
             for i, idx in enumerate(lookup_idxs):
                 
                 if len(lookup_idxs)!=len(cur_out[0]):
-                    cur_out[0][idx, i, :] += delta
+                    cur_out[0][idx, i, :] += delta.to(cur_out[0].device)
                 else:
-                    cur_out[0][i, idx, :] += delta
+                    cur_out[0][i, idx, :] += delta.to(cur_out[0].device)
 
         return cur_out
 

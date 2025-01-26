@@ -15,6 +15,8 @@ import random
 import numpy as np
 import os
 from transformers.modeling_attn_mask_utils import AttentionMaskConverter,_prepare_4d_causal_attention_mask
+# import os
+# os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 
 def set_seed(seed=2024):
     '''Sets the seed of the entire notebook so results are the same every time we run.
@@ -139,10 +141,10 @@ def execute_batch_unke(
         layer_out_ks = layer_out_ks[0] if type(layer_out_ks) is tuple else layer_out_ks
         
 
-        cur_zs,idxs = compute_ks(model, tok,batch_question, config, z_layer)
+        cur_zs,idxs = compute_ks(model, tok, batch_question, config, z_layer)
         
         
-        targets = zs - cur_zs 
+        targets = zs.to(cur_zs.device) - cur_zs 
 
 
         ex_tok = tok(ex_data, padding=True, return_tensors="pt").to(
@@ -187,7 +189,7 @@ def execute_batch_unke(
         
         # get_qwen2_causal_mask
         # llama2
-        if config.model_name == 'LLama2-7B-Chat':
+        if config.model_name == 'LLama2-7B-Chat' or config.model_name == 'LLama3.1-8B-Instruct':
             input_causal_mask,input_position_ids,input_cache_position = get_causal_mask(layer_in_ks,contexts_tok['attention_mask'])
             ex_causal_mask,ex_position_ids,ex_cache_position = get_causal_mask(stat_in,ex_tok['attention_mask'])
         elif config.model_name == 'Qwen1.5-7B-Chat':
@@ -201,7 +203,7 @@ def execute_batch_unke(
             if config.model_name == 'Qwen1.5-7B-Chat':
                 loss = criterion(_layer(stat_in,attention_mask=ex_causal_mask,position_ids=ex_position_ids)[0], stat_out)+ criterion(_layer(layer_in_ks,attention_mask=input_causal_mask,position_ids=input_position_ids)[0], layer_out_ks)
                 # loss =  criterion(_layer(layer_in_ks,attention_mask=input_causal_mask,position_ids=input_position_ids)[0], layer_out_ks)
-            elif config.model_name == 'LLama2-7B-Chat':
+            elif config.model_name == 'LLama2-7B-Chat' or config.model_name == 'LLama3.1-8B-Instruct':
                 loss = criterion(_layer(stat_in,attention_mask=ex_causal_mask,position_ids=ex_position_ids,cache_position = ex_cache_position)[0], stat_out)+ criterion(_layer(layer_in_ks,attention_mask=input_causal_mask,position_ids=input_position_ids,cache_position=input_cache_position)[0], layer_out_ks)
                 # loss = criterion(_layer(layer_in_ks,attention_mask=input_causal_mask,position_ids=input_position_ids,cache_position=input_cache_position)[0], layer_out_ks)
                 # loss = criterion(_layer(layer_in_ks,attention_mask=input_causal_mask,position_ids=input_position_ids,cache_position=input_cache_position)[0][:,-1], layer_out_ks[:,-1])
@@ -321,14 +323,19 @@ if __name__ == "__main__":
         ex_datas = json.load(json_file)
     ex_datas = [get_llama_without_answer(i['instruction']+i['input'])+i['output']  for i in ex_datas]
     
-    model = AutoModelForCausalLM.from_pretrained(config.model_path, device_map=f"cuda:{config.device}")
+    # model = AutoModelForCausalLM.from_pretrained(config.model_path, device_map=f"cuda:{config.device}", torch_dtype=torch.bfloat16)
+    model = AutoModelForCausalLM.from_pretrained(config.model_path, device_map='auto', torch_dtype=torch.bfloat16)
+    # model = AutoModelForCausalLM.from_pretrained(config.model_path, device_map='auto')
+    
     
     tok = AutoTokenizer.from_pretrained(config.model_path)
     tokenizer = AutoTokenizer.from_pretrained(config.model_path,padding_side='left')
-    if config.model_name == 'LLama2-7B-Chat':
+    if config.model_name == 'LLama2-7B-Chat' or config.model_name == 'LLama3.1-8B-Instruct':
         tok.pad_token_id = tok.eos_token_id
         tokenizer.pad_token_id = tok.eos_token_id
-
+        # tok.pad_token_id = tokenizer.eos_token_id
+        # tokenizer.pad_token_id = tokenizer.eos_token_id
+    config.device = str(model.device).split(":")[1]
     batch_size = config.batch_size
     num_batches = len(edit_data) // batch_size + (1 if len(edit_data) % batch_size else 0)
     edited_data = []
@@ -340,7 +347,7 @@ if __name__ == "__main__":
         batch = edit_data[start_index:end_index]
         for i in batch:
             #i['para_question'] = i['question']
-            if config.model_name == 'LLama2-7B-Chat':
+            if config.model_name == 'LLama2-7B-Chat' or config.model_name == 'LLama3.1-8B-Instruct':
                 i['question'] = get_llama_without_answer(i['question'])
                 i['para_question'] = get_llama_without_answer(i['para_question'])
                 i['answer'] = i['answer']+'</s>'
@@ -380,6 +387,7 @@ if __name__ == "__main__":
                 input_ids=question['input_ids'].to(f'cuda:{str(config.device)}'),
                 attention_mask=question['attention_mask'].to(f'cuda:{str(config.device)}'),
                 do_sample=True,
+                # num_beams=5,
                 temperature=0.001,
                 max_new_tokens=512
             )
@@ -394,7 +402,7 @@ if __name__ == "__main__":
                 print(output[1])
             data['original_prediction'] = output[0]
             data['para_prediction'] = output[1]
-            if config.model_name == 'LLama2-7B-Chat':
+            if config.model_name == 'LLama2-7B-Chat' or config.model_name == 'LLama3.1-8B-Instruct':
                 data['answer'] = data['answer'][:-len('</s>')]
             elif config.model_name == 'Qwen1.5-7B-Chat':
                 data['answer'] = data['answer'][:-len('<|im_end|>')]
@@ -428,11 +436,14 @@ if __name__ == "__main__":
             with torch.no_grad():
                 for k, v in weights_copy.items():
                     nethook.get_parameter(model, k)[...] = v.to(f"cuda:{config.device}")
+                    
+        # torch.cuda.empty_cache() 
+        
     all_pre_cors = [np.mean(i) for i in all_pre_cors]
     all_post_cors = [np.mean(i) for i in all_post_cors]
     print(f'pre_mmlu:{sum(all_pre_cors)/len(all_pre_cors)}')
     print(f'post_mmlu:{sum(all_post_cors)/len(all_post_cors)}')
-    path = '../output/result.json'
+    path = '../output/result2.json'
     with open(path, 'w', encoding='utf-8') as json_file: 
         json.dump(edited_data, json_file, ensure_ascii=False, indent=4)
     
