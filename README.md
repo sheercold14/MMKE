@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # UnKE
 This is the official repo for our [paper](https://arxiv.org/abs/2405.15349): 
 > Everything is Editable: Extend Knowledge Editing to Unstructured Data in Large Language Models
